@@ -1,8 +1,12 @@
+
+set history=1000 " Lines of history to remember
+set autoread     " Autoread when a file is changed
+
 set number
 syntax on
 
-set showmatch  " Highlights matching brackets
-set incsearch
+set showmatch    " Highlights matching brackets
+set incsearch    " Incremental search
 
 set smartindent
 set autoindent " If indented, newlines will be indented
