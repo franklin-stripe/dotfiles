@@ -1,4 +1,4 @@
 EDITOR=vim
-GIT_EDTOR=vim
+GIT_EDITOR=vim
 
 alias rm=trash
