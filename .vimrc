@@ -10,8 +10,8 @@ set incsearch    " Incremental search
 
 set smartindent
 set autoindent " If indented, newlines will be indented
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 map <C-J> <C-W><C-W>
