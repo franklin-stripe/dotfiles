@@ -3,3 +3,10 @@
 	email = franklin.who@gmail.com
 [core]
 	editor = vim
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[alias]
+    co = checkout
+    log1 = log --format=oneline
