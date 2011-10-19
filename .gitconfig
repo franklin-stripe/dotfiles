@@ -9,4 +9,7 @@
     branch = auto
 [alias]
     co = checkout
+    f = fetch
     log1 = log --format=oneline
+    m = merge
+    st = status
