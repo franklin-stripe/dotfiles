@@ -7,9 +7,12 @@
     diff = auto
     status = auto
     branch = auto
+    interactive = auto
+    ui = auto
 [alias]
     co = checkout
     f = fetch
+    lg = log --graph --pretty=oneline --abbrev-commit --decorate
     log1 = log --format=oneline
     m = merge
     st = status
