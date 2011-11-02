@@ -5,4 +5,4 @@ ln -s .gitignore ~/.gitignore
 ln -s .inputrc ~/.inputrc
 ln -s .vimrc ~/.vimrc
 
-sudo apt-get install git gnome-do subversion
+sudo apt-get install git gnome-do htop subversion
