@@ -4,9 +4,18 @@ set autoread     " Autoread when a file is changed
 
 set number
 syntax on
+set encoding=utf-8
+set showcmd
 
+"" Whitespace
+set nowrap       " don't wrap lines
+set backspace=indent,eol,start
+
+set hlsearch
 set showmatch    " Highlights matching brackets
 set incsearch    " Incremental search
+set ignorecase   " searches are case insensitive
+set smartcase    " ... unless they contain one capital
 
 set smartindent
 set autoindent " If indented, newlines will be indented
