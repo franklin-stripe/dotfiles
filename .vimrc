@@ -8,7 +8,6 @@ set encoding=utf-8
 set showcmd
 
 "" Whitespace
-set nowrap       " don't wrap lines
 set backspace=indent,eol,start
 
 set hlsearch
