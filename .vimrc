@@ -1,3 +1,5 @@
+set ruler        " Show line/col info
+
 setlocal omnifunc=syntaxcomplete#Complete
 set history=1000 " Lines of history to remember
 set autoread     " Autoread when a file is changed
