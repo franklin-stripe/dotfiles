@@ -27,3 +27,10 @@ set expandtab
 map <C-J> <C-W><C-W>
 map <C-K> <C-W><C-W>
 
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
+inoremap jj <Esc>
+
