@@ -10,3 +10,8 @@ set completion-map-case on
 
 Control-j: menu-complete
 Control-k: menu-complete-backward
+
+Control-b: backward-word
+Control-f: forward-word
+Control-a: beginning-of-line
+Control-e: end-of-line
