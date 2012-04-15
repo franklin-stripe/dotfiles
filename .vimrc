@@ -20,8 +20,8 @@ set smartcase    " ... unless they contain one capital
 
 set smartindent
 set autoindent " If indented, newlines will be indented
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 map <C-J> <C-W><C-W>
