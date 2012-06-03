@@ -243,6 +243,9 @@ globalkeys = awful.util.table.join(
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
+    -- Screen lock
+    awful.key({ modkey, "Control" }, "l", function() awful.util.spawn("xlock") end),
+
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
 
