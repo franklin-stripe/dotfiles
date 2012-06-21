@@ -17,4 +17,5 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     log1 = log --format=oneline
     m = merge
-    st = status
+    st = status -sb
+    status = status -sb
