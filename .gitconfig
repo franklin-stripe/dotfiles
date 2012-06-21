@@ -19,3 +19,7 @@
     m = merge
     st = status -sb
     status = status -sb
+[help]
+    autocorrect = 1
+[rerere]
+    enabled = 1 # replays merge conflict resolutions
