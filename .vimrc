@@ -9,6 +9,12 @@ syntax on
 set encoding=utf-8
 set showcmd
 
+"" Completion popover colors
+:highlight   Pmenu         ctermfg=0 ctermbg=2
+:highlight   PmenuSel      ctermfg=0 ctermbg=7
+:highlight   PmenuSbar     ctermfg=7 ctermbg=0
+:highlight   PmenuThumb    ctermfg=0 ctermbg=7
+
 "" Whitespace
 set backspace=indent,eol,start
 
@@ -26,6 +32,10 @@ set expandtab
 
 map <C-J> <C-W><C-W>
 map <C-K> <C-W><C-W>
+
+"" Tab completion
+imap <Tab> <C-P>
+imap <S-Tab> <C-N>
 
 noremap <Up> <nop>
 noremap <Down> <nop>
