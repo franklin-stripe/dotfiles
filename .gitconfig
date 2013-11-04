@@ -14,7 +14,8 @@
     b = branch
     co = checkout
     f = fetch
-    lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lg = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=rfc
+    lgclean = log --graph --pretty=format:'%h %an -%d %s (%cr)' --abbrev-commit --date=relative
     log1 = log --format=oneline
     m = merge
     st = status -sb
