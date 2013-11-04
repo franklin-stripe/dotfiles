@@ -1,40 +1,58 @@
-# Franklin Hu
-# @thisisfranklin
-bindkey -v
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
 
-# Sources
-## Git prompt (https://github.com/olivierverdier/zsh-git-prompt)
-source ~/.zsh/git-prompt/zshrc.sh
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="thisisfranklin"
 
-zstyle :compinstall filename '/home/franklin/.zshrc'
-autoload -Uz compinit
-compinit
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Aliases
-alias ls='ls --color'
-alias la='ls -a'
-alias ll='ls -la'
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
 
-# Environment variables
-export EDITOR='vim'
-export GREP_OPTIONS='--color=auto'
+# Comment this out to disable bi-weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
 
-# Completion
-zstyle ':completion::complete:*' use-cache 1                # caching
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'         # case insensitive
-zstyle ':completion:*' list-colors "=(#b) #([0-9]#)*=36=31" # colors
+# Uncomment to change how often before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
 
-# History
-HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
 
-setopt APPEND_HISTORY
-setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY      # Share history between multiple shells
-setopt HIST_IGNORE_DUPS
-setopt HIST_REDUCE_BLANKS
-setopt EXTENDED_HISTORY   # command time/duration
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
 
-# Custom prompt
-PROMPT='%B%m%~%b$(git_super_status) $ '
+# Uncomment following line if you want to disable command autocorrection
+DISABLE_CORRECTION="true"
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment following line if you want to disable marking untracked files under
+# VCS as dirty. This makes repository status check for large repositories much,
+# much faster.
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(autojump brew git mvn osx rvm svn)
+
+# On OSX opens a new tab in the current directory
+precmd () {print -Pn "\e]2; %~/ \a"}
+preexec () {print -Pn "\e]2; %~/ \a"}
+
+source $ZSH/oh-my-zsh.sh
+source /usr/local/rvm/scripts/rvm
+source ~/.aliases
+source ~/.zshrc.local
+
+# Customize to your needs...
+
+# Prepend /usr/local so brew installs take precedence
+export PATH=/usr/local/sbin:/usr/local/bin:$PATH
+
