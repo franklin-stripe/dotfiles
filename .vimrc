@@ -34,8 +34,8 @@ map <C-J> <C-W><C-W>
 map <C-K> <C-W><C-W>
 
 "" Tab completion
-imap <Tab> <C-P>
-imap <S-Tab> <C-N>
+""imap <Tab> <C-P>
+""imap <S-Tab> <C-N>
 
 noremap <Up> <nop>
 noremap <Down> <nop>
