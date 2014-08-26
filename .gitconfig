@@ -1,8 +1,9 @@
 [user]
     name = Franklin Hu
-    email = franklin@twitter.com
+    email = franklin@stripe.com
 [core]
     editor = vim
+    excludesfile = ~/.gitignore
     whitespace = trailing-space,space-before-tab
 [color]
     diff = auto
@@ -24,3 +25,7 @@
     autocorrect = 1
 [rerere]
     enabled = 1 # replays merge conflict resolutions
+[push]
+    default = upstream
+[branch "master"]
+    mergeoptions = --ff-only
