@@ -5,7 +5,14 @@ set history=1000 " Lines of history to remember
 set autoread     " Autoread when a file is changed
 
 set number
+
+"" Hack to get Go syntax highlighting
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
 syntax on
+
 set encoding=utf-8
 set showcmd
 
