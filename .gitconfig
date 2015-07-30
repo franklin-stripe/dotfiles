@@ -26,6 +26,8 @@
 [rerere]
     enabled = 1 # replays merge conflict resolutions
 [push]
-    default = upstream
+	default = current
 [branch "master"]
     mergeoptions = --ff-only
+[remote]
+	pushdefault = origin
