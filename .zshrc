@@ -40,14 +40,13 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump brew git mvn osx rvm svn)
+plugins=(autojump brew git mvn osx rbenv svn)
 
 # On OSX opens a new tab in the current directory
 precmd () {print -Pn "\e]2; %~/ \a"}
 preexec () {print -Pn "\e]2; %~/ \a"}
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/rvm/scripts/rvm
 source ~/.aliases
 source ~/.zshrc.local
 
