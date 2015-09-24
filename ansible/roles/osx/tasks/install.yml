@@ -14,3 +14,10 @@
     - tmux
     - tree
 
+- name: install gems
+  gem:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - jekyll
+
