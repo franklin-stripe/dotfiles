@@ -3,7 +3,7 @@
 - name: install base homebrew packages
   homebrew:
     name: "{{item}}"
-    state: present
+    state: latest
   with_items:
     - ansible
     - caskroom/cask/brew-cask
@@ -20,7 +20,7 @@
 - name: install gems
   gem:
     name: "{{item}}"
-    state: present
+    state: latest
     user_install: no
   notify: rbenv rehash
   with_items:
