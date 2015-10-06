@@ -21,7 +21,10 @@
   gem:
     name: "{{item}}"
     state: present
+    user_install: no
+  notify: rbenv rehash
   with_items:
+    - bundler
     - jekyll
 
 - name: install npm packages

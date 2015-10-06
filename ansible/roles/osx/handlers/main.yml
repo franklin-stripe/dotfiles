@@ -1,0 +1,6 @@
+---
+- name: rbenv rehash
+  shell: >
+    eval "$(rbenv init -)";
+    rbenv rehash
+
