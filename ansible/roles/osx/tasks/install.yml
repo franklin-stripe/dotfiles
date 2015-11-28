@@ -14,9 +14,11 @@
     - mtr
     - npm
     - openssl
+    - packer
     - rbenv
     - rbenv-gem-rehash
     - rust
+    - terraform
     - tmux
     - tree
 
