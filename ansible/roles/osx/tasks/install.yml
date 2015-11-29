@@ -18,6 +18,7 @@
     - rbenv
     - rbenv-gem-rehash
     - rust
+    - terminal-notifier
     - terraform
     - tmux
     - tree
