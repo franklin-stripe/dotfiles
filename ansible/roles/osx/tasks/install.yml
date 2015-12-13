@@ -48,3 +48,8 @@
   with_items:
     - keybase-installer
 
+- name: install vim pathogen packages
+  git: repo=https://github.com/{{ item.repo }} dest=~/.vim/bundle/{{ item.dest }}
+  with_items:
+    - { repo: 'plasticboy/vim-markdown', dest: 'vim-markdown' }
+
