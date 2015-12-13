@@ -51,5 +51,6 @@
 - name: install vim pathogen packages
   git: repo=https://github.com/{{ item.repo }} dest=~/.vim/bundle/{{ item.dest }}
   with_items:
+    - { repo: 'scrooloose/syntastic', dest: 'syntastic' }
     - { repo: 'plasticboy/vim-markdown', dest: 'vim-markdown' }
 
