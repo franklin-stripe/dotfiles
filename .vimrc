@@ -51,6 +51,10 @@ noremap <Right> <nop>
 
 inoremap jj <Esc>
 
+"" Column line limit
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%73v', 100)
+
 execute pathogen#infect()
 
 "" Syntastic
