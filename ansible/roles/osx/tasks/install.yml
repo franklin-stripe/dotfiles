@@ -53,4 +53,5 @@
   with_items:
     - { repo: 'scrooloose/syntastic', dest: 'syntastic' }
     - { repo: 'plasticboy/vim-markdown', dest: 'vim-markdown' }
+    - { repo: 'tpope/vim-fugitive', dest: 'vim-fugitive' }
 
