@@ -29,6 +29,7 @@
     state: present
   with_items:
     - atom
+    - java
 
 - name: install gems
   gem:
@@ -43,7 +44,7 @@
 - name: install npm packages
   npm:
     name: "{{item}}"
-    state: present
+    state: latest
     global: yes
   with_items:
     - keybase-installer
