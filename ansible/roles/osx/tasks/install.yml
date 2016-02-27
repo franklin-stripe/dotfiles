@@ -56,4 +56,5 @@
     - { repo: 'scrooloose/syntastic', dest: 'syntastic' }
     - { repo: 'plasticboy/vim-markdown', dest: 'vim-markdown' }
     - { repo: 'tpope/vim-fugitive', dest: 'vim-fugitive' }
+    - { repo: 'fatih/vim-go', dest: 'vim-go' }
 
