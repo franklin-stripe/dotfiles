@@ -57,4 +57,5 @@
     - { repo: 'plasticboy/vim-markdown', dest: 'vim-markdown' }
     - { repo: 'tpope/vim-fugitive', dest: 'vim-fugitive' }
     - { repo: 'fatih/vim-go', dest: 'vim-go' }
+    - { repo: 'rust-lang/rust.vim', dest: 'rust.vim' }
 
