@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="thisisfranklin"
+ZSH_THEME="robbyrussell"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -40,7 +40,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump brew git mvn osx rbenv svn)
+plugins=(autojump brew git mvn osx svn rbenv)
 
 # On OSX opens a new tab in the current directory
 precmd () {print -Pn "\e]2; %~/ \a"}
@@ -53,5 +53,5 @@ source ~/.zshrc.local
 # Customize to your needs...
 
 # Prepend /usr/local so brew installs take precedence
-export PATH=/usr/local/sbin:/usr/local/bin:$PATH:~/bin
+export PATH=~/.rbenv/shims:/usr/local/sbin:/usr/local/bin:~/bin:$PATH
 
