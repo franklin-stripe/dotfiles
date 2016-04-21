@@ -66,4 +66,5 @@
     - { repo: 'tpope/vim-fugitive', dest: 'vim-fugitive' }
     - { repo: 'fatih/vim-go', dest: 'vim-go' }
     - { repo: 'rust-lang/rust.vim', dest: 'rust.vim' }
+    - { repo: 'airblade/vim-gitgutter', dest: 'vim-gitgutter' }
 
