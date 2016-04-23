@@ -40,7 +40,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump brew git mvn osx svn rbenv)
+plugins=(autojump brew git mvn osx svn rbenv golang)
 
 # On OSX opens a new tab in the current directory
 precmd () {print -Pn "\e]2; %~/ \a"}
@@ -54,4 +54,7 @@ source ~/.zshrc.local
 
 # Prepend /usr/local so brew installs take precedence
 export PATH=~/.rbenv/shims:/usr/local/sbin:/usr/local/bin:~/bin:$PATH
+
+export GOPATH=~/code/gopath
+export PATH=$PATH:$GOPATH/bin
 
