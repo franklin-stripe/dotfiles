@@ -14,11 +14,11 @@
     - iftop
     - jq
     - mtr
+    - multirust
     - npm
     - openssl
     - packer
     - rbenv
-    - rust
     - terminal-notifier
     - terraform
     - tmux
