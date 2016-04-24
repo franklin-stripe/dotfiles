@@ -74,3 +74,5 @@ if v:version > 703 || v:version == 703 && has("patch541")
   set formatoptions+=j " Delete comment character when joining commented lines
 endif
 
+"" Enable js syntax for json files
+autocmd BufNewFile,BufRead *.json set ft=javascript
