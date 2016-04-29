@@ -68,4 +68,5 @@
     - { repo: 'rust-lang/rust.vim', dest: 'rust.vim' }
     - { repo: 'airblade/vim-gitgutter', dest: 'vim-gitgutter' }
     - { repo: 'derekwyatt/vim-scala', dest: 'vim-scala' }
+    - { repo: 'rodjek/vim-puppet', dest: 'vim-puppet' }
 
