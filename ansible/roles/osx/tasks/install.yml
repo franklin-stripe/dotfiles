@@ -19,6 +19,7 @@
     - openssl
     - packer
     - rbenv
+    - sbt
     - terminal-notifier
     - terraform
     - tmux
