@@ -6,7 +6,6 @@
     state: latest
   with_items:
     - ansible
-    - caskroom/cask/brew-cask
     - docker
     - docker-machine
     - git
@@ -31,6 +30,7 @@
     state: present
   with_items:
     - atom
+    - intellij-idea
     - java
 
 - name: install gems
