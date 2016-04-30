@@ -24,14 +24,19 @@
     - tmux
     - tree
 
+- name: tap caskroom/cask and caskroom/versions
+  command: 'brew tap caskroom/cask && brew tap caskroom/versions'
+  register: cask_taps
+
 - name: install homebrew cask packages
   homebrew_cask:
     name: "{{item}}"
     state: present
   with_items:
     - atom
-    - intellij-idea
+    - intellij-idea-ce
     - java
+  when: cask_taps
 
 - name: install gems
   gem:
