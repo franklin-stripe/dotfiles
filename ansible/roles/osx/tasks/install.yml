@@ -19,6 +19,7 @@
     - packer
     - rbenv
     - sbt
+    - scala
     - terminal-notifier
     - terraform
     - tmux
