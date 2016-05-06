@@ -76,4 +76,5 @@
     - { repo: 'airblade/vim-gitgutter', dest: 'vim-gitgutter' }
     - { repo: 'derekwyatt/vim-scala', dest: 'vim-scala' }
     - { repo: 'rodjek/vim-puppet', dest: 'vim-puppet' }
+    - { repo: 'cronson/vim-trailing-whitespace', dest: 'vim-trailing-whitespace' }
 
