@@ -3,3 +3,4 @@
 .sublime-project
 *.iml
 .idea/*
+ansible/laptop.retry
