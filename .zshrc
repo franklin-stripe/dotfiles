@@ -53,7 +53,7 @@ source ~/.zshrc.local
 # Customize to your needs...
 
 # Prepend /usr/local so brew installs take precedence
-export PATH=~/.rbenv/shims:/usr/local/sbin:/usr/local/bin:~/bin:$PATH
+export PATH=/usr/local/sbin:/usr/local/bin:~/bin:$PATH
 
 export GOPATH=~/code/gopath
 export PATH=$PATH:$GOPATH/bin
