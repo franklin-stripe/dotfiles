@@ -58,3 +58,5 @@ export PATH=/usr/local/sbin:/usr/local/bin:~/bin:$PATH
 export GOPATH=~/code/gopath
 export PATH=$PATH:$GOPATH/bin
 
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
