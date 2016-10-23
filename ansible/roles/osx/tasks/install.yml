@@ -37,6 +37,7 @@
     - atom
     - intellij-idea-ce
     - java
+    - virtualbox
   when: cask_taps
 
 - name: install gems
