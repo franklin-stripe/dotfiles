@@ -40,7 +40,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump aws brew bundler git mvn osx svn terraform rbenv golang colored-man-pages)
+plugins=(autojump aws brew bundler git mvn osx svn terraform rbenv golang colored-man-pages tmux)
 
 # On OSX opens a new tab in the current directory
 precmd () {print -Pn "\e]2; %~/ \a"}
@@ -61,3 +61,4 @@ export PATH=$PATH:$GOPATH/bin
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 alias mvn=mvn-color
+alias tmux='tmux -u'
