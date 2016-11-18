@@ -17,6 +17,7 @@
     - npm
     - openssl
     - packer
+    - reattach-to-user-namespace
     - rbenv
     - sbt
     - scala
